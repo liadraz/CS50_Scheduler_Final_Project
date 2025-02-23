@@ -1,8 +1,7 @@
 # Simple Scheduler
 
-### This project is the Final Project of the CS50 online course 2022.
-Written in C language, run and tested on Linux Ubuntu OS. <br>
-Created by Liad Raz.
+### This project is the Final Project of the CS50 Harvard University online course
+Written in C language, run and tested on Linux Ubuntu 24v OS <br>
 
 <br>
 
@@ -12,9 +11,9 @@ https://youtu.be/h4Dk4DDv4f4
 <br>
 
 # Description
-A program that executes several operations (tasks) at predetermined time intervals.
+This is a program that executes several operations (tasks) at predetermined time intervals.
 
-This project is an expirement on how a modern Operating System scheduler works.
+This project is an experiment on how a modern Operating System synchronized scheduler works.
 
 <br>
 
