@@ -3,15 +3,13 @@
 ### This project is the Final Project of the CS50 Harvard University online course
 Written in C language, run and tested on Linux Ubuntu 24v OS <br>
 
-<br>
-
-## Video Demo URL
+#### Video Demo URL
 https://youtu.be/h4Dk4DDv4f4
 
 <br>
 
 # Description
-This is a program that executes several operations (tasks) at predetermined time intervals.
+This program executes several operations (tasks) at predetermined time intervals.
 
 This project is an experiment on how a modern Operating System synchronized scheduler works.
 
@@ -24,7 +22,7 @@ The scheduler program is built on several APIs:
 * UID - Each task gets a unique ID, which is created when a task is being added to the scheduler, `uid.h`
 * Container - Added tasks are sorted in a priority queue data structure - `pqueue.h`. The priority-queue is a wrapper API built on a sorted list module - `sorted_list.h`, that is based on a doubly linked-list module - `dlinked_list.h`.
 
-> Usage explanation below describes how to build and use the scheduler API. <br>
+> The usage explanation below describes how to build and use the scheduler API. <br>
 > For further information on a specific module see the `./include` directory.
 
 </br>
@@ -58,7 +56,7 @@ struct scheduler
 
 ## Adding A Task
 Invoke `SchedAdd()` to add a task to the Scheduler.
-Each added task gets a unique id and is inserted into the priority queue container.
+Each added task gets a unique ID and is inserted into the priority queue container.
 The pqueue sorts the tasks by time priority. The closest task time to be executed (interval time added to current time) will be pulled from the queue and executed first.
 
 ```c
@@ -85,7 +83,7 @@ struct uid
 > - Tasks can be added only when the scheduler is not RUNNING.
 > - Each task has an interval time that determines when the task will be executed.
 > - Time interval determined in seconds.
-> - Task is being executed and returns to the scheduler unless the user asked to remove it from the queue.
+> - The task is being executed and returns to the scheduler unless the user asks to remove it from the queue.
 > - Tasks can remove themselves or other tasks. (`See Removing A Task`)
 
 Task Struct Definition:
